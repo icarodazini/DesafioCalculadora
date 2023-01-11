@@ -1,15 +1,10 @@
-package org.example;
-
-import org.example.CalculadoraSimples.FuncaoDividir;
-import org.example.CalculadoraSimples.FuncaoMultiplicar;
-import org.example.CalculadoraSimples.FuncaoSoma;
-import org.example.CalculadoraSimples.FuncaoSubtrair;
+package org.example.CalculadoraSimples;
 
 import java.util.Scanner;
 
 public class Funcao {
 
-    public static void funcao() {
+    public static void calculadoraSimples() {
         String operacao;
         Scanner entrada = new Scanner(System.in);
         System.out.println("Escolha sua operação: somar, subtrair, multiplicar, dividir.");
@@ -18,23 +13,24 @@ public class Funcao {
         switch( operacao )
         {
             case "somar":
-                FuncaoSoma.somar();
+                FuncaoOperacao.somar();
                 break;
 
             case "subtrair":
-                FuncaoSubtrair.subtrair();
+                FuncaoOperacao.subtrair();
                 break;
 
             case "multiplicar":
-                FuncaoMultiplicar.multiplicar();
+                FuncaoOperacao.multiplicar();
                 break;
 
             case "dividir":
-                FuncaoDividir.dividir();
+                FuncaoOperacao.dividir();
                 break;
 
             default:
                 System.out.printf("Você digitou uma operação inválida.");
         }
     }
+
 }
