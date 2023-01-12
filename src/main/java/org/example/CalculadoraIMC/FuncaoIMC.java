@@ -3,7 +3,7 @@ package org.example.CalculadoraIMC;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class FuncaoOperacao {
+public class FuncaoIMC {
 
     public static void IMC() {
 

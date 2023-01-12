@@ -9,7 +9,7 @@ public class Gasolina {
 
         System.out.println("obs: Digite apenas numeros!");
         System.out.println("Quantos litros de gasolina o seu carro gasta por quilometro");
-        double litroPorKm = sc.nextDouble();
+        double KmPorlitro = sc.nextDouble();
 
         System.out.println("Quantos quilometros voce pretende percorrer?");
         double km = sc.nextDouble();
@@ -17,9 +17,9 @@ public class Gasolina {
         System.out.println("Qual o valor atual da gasolina?");
         double valorDaGasolina = sc.nextDouble();
 
-        double valorASerPago = km * valorDaGasolina;
+        double litroASeremUsados = km / KmPorlitro;
 
-        double litroASeremUsados = litroPorKm * km;
+        double valorASerPago = valorDaGasolina * litroASeremUsados;
 
         System.out.printf("Voce precisara de %.1f litros de gasolina para percorrer %.1f quilometros e ira gastar um valor de R$ %.2f ", litroASeremUsados, km, valorASerPago);
 
