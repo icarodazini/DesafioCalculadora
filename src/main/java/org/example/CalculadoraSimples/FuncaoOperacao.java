@@ -5,11 +5,14 @@ import java.util.Scanner;
 
 public class FuncaoOperacao {
 
-    Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
+    static Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
 
     public static void dividir() {
 
+
         Scanner ScannerCapturaEntradaDoUsuario = new Scanner(System.in);
+
+        System.out.println("");
 
         System.out.println("Informe o primeiro numero");
         long num1 = ScannerCapturaEntradaDoUsuario.nextInt();

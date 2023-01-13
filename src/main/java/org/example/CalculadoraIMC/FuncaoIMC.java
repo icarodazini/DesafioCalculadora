@@ -38,7 +38,7 @@ public class FuncaoIMC {
             System.out.println("e se enquadra na faixa de obesidade - OBESIDADE");
         else
         if ((IMC>35.0)&&(IMC <39.9))
-            System.out.println ("");
+            System.out.println ("e se enquadra na faixa de obesidade - OBESIDADE 2");
         else
         if (IMC>=40)
             System.out.println ("e se enquadra na faixa de obesidade - OBESIDADE GRAVE");
